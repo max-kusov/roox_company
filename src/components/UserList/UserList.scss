@@ -1,0 +1,22 @@
+.users{
+  width: 100%;
+  max-width: 440px;
+  padding: 19px 34px;
+  text-align: left;
+  &__title {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+
+    color: #000000;
+  }
+  &__counter {
+    width: 100%;
+    text-align: right;
+    font-size: 12px;
+    // text-align: right;
+  }
+
+}
