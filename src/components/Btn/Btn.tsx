@@ -3,11 +3,12 @@ import React from 'react'
 import './Btn.scss'
 
 type BtnProps = {
+  click: any,
   text: string
 }
-function Btn({ text }: BtnProps) {
+function Btn({ click, text }: BtnProps) {
   return (
-    <button className='btn'>{text}</button>
+    <button onClick={click} className='btn'>{text}</button>
   )
 }
 

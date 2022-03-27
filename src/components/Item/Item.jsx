@@ -1,4 +1,5 @@
 import React from 'react'
+
 import './Item.scss'
 
 // type ItemProps = {
@@ -11,6 +12,7 @@ type ItemProps = {
   address: string,
   company: string,
 }
+
 function Item({ name, address, company }: ItemProps) {
   return (
     <li className='item'>
