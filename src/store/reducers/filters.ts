@@ -2,7 +2,7 @@ import { FILTERS_USERS } from "../constants"
 import { Filter, FilterActionType } from "../types"
 
 
-const BASE_FILTER = 'city'
+const BASE_FILTER: Filter = 'city'
 
 
 const filters = (state = BASE_FILTER, { type, payload }: FilterActionType): Filter => {

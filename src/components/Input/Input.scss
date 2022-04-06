@@ -1,0 +1,35 @@
+.input {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+
+  &__label {
+    display: block;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 9px;
+    margin: 10xp;
+
+    color: #000000;
+  }
+
+  &__field {
+    display: block;
+    padding: 5px 10px;
+    width: 210px;
+    border: 1px solid #D8D8D8;
+    border-radius: 5px;
+    outline: none;
+    color: rgba(0, 0, 0, 0.3);
+    margin-top: 5px;
+
+  }
+
+  .error {
+    border: 1px solid #D91313;
+  }
+}
+
+.active {
+  color: #000;
+}

@@ -7,6 +7,9 @@ import UserList from './components/UserList/UserList'
 import { useSelector, useDispatch } from 'react-redux'
 
 import { fetchUsers } from './store/actions/actionCreator'
+import Profile from './components/Profile/Profile';
+
+import { Routes, Route } from 'react-router-dom'
 
 
 function App() {
@@ -22,10 +25,14 @@ function App() {
   React.useEffect(() => {
     dispatch(fetchUsers(activeFilter))
   }, [activeFilter])
+
   return (
     <div className="App">
       <Sort />
-      <UserList users={users} />
+      <Routes>
+        <Route path='/' element={<UserList users={users} />} />
+        <Route path='/profile' element={<Profile />} />
+      </Routes>
     </div>
   );
 }

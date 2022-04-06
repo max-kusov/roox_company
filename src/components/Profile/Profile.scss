@@ -1,0 +1,75 @@
+.profile{
+  width: 100%;
+  max-width: 440px;
+  padding: 19px 34px;
+  text-align: left;
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__title {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+
+    color: #000000;
+  }
+  &__form {
+    margin-top: 10px;
+    height: 463px;
+    border: 1px solid #F3F3F3;
+    border-radius: 8px;
+    padding: 20px 12px;
+  }
+  &__textarea {
+    width: 400px;
+    height: 55px;
+
+    border: 1px solid #D8D8D8;
+    border-radius: 5px;
+
+    padding: 5px 10px;
+    outline:none;
+  }
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  &__label {
+    display: block; 
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 9px;
+
+    color: #000000;
+  }
+  &__field {
+    display: block; 
+    padding: 5px 10px;
+    width: 210px;
+    border: 1px solid #D8D8D8;
+    border-radius: 5px;
+    outline:none;
+    color: rgba(0, 0, 0, 0.3);
+    margin-top: 5px;
+  }
+  .error {
+    border: 1px solid #D91313;
+  }
+  &__submit {
+    padding: 5px 15px;
+
+    background: #52CF4F;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+  }
+}
+.active {
+  color: #000;
+}
